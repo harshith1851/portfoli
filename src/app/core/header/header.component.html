@@ -1,0 +1,73 @@
+<header class="bg-slate-200">
+  <div class="w-[100%] py-5 flex justify-between mx-auto ">
+    <div class="flex space-x-4 lg:space-x-8 px-5">
+      <div class="align-middle">
+        <a href="">
+          <svg
+          class="w-8 h-8 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 20 16"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
+          />
+        </svg>
+        </a>
+      </div>
+      <div class="uppercase align-middle font-bold text-2xl"><a href="">harshith</a></div>
+    </div>
+
+    <div class="portMenu absolute top-16 hidden lg:flex z-50  flex-col lg:justify-end lg:px-56 lg:static lg:flex-row lg:space-x-16 pt-1 w-[100%] mx-auto bg-slate-200">
+      <ul class=" flex flex-col lg:flex-row  items-center lg:items-end gap-12 lg:gap-12 py-5 lg:py-0">
+        <li class="uppercase font-bold active:scale-50 duration-500"><a href="/#home">Home</a></li>
+        <li class="uppercase font-bold active:scale-50 duration-500"><a href="/about#about">about</a></li>
+        <li class="uppercase font-bold active:scale-50 duration-500"><a href="/project#project">project</a></li>
+        <li class="uppercase font-bold" >Resume</li>
+      </ul>
+    </div>
+
+    <div class="lg:hidden px-5">
+      <div *ngIf="!showDetail" class="" (click)="showDetailMenu()">
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </div>
+
+      <div *ngIf="showDetail" class="" (click)="showDetailMenu()">
+        <svg
+          class="w-5 h-5 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>

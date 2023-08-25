@@ -1,0 +1,81 @@
+<main class="pb-10 bg-slate-50" id="about">
+  <div class="">
+    <div class="space-y-10 lg:space-y-0" >
+      <div class="space-y-5">
+        <div class="flex flex-col justify-center pt-14 items-center space-y-3">
+          <p class="uppercase text-3xl font-bold">about me</p>
+          <p class="underlines"></p>
+        </div>
+        <div class="text-center">
+          <p class="p-8 text-xl text-gray-400">
+            A Boy with dream to enrich life of people with exciting software
+            products <span class="absolute animate-bounce">😀</span>
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col space-y-10 lg:space-y-0 md:flex-row ">
+        <div class="lg:w-[50%] lg:ps-24 lg:flex lg:justify-end">
+            <div class="space-y-7">
+              <div class="flex justify-center lg:justify-start lg:px-4">
+                <p class="text-2xl font-bold">Get to know me!</p>
+              </div>
+              <div class="px-4 text-gray-400">
+                <p class="">
+                  I bring enthusiasm and a futuristic approach to every project I am
+                  a part of. I live for changing ideas into reality, even more so if
+                  it involves a puzzle or challenge.
+                </p>
+              </div>
+              <div class="px-4 text-gray-400">
+                <p class="">
+                  My websites include unit tests, UI tests, scalable architectures, and
+                  design patterns, well-documented, easy-to-read code, and
+                  deployment to the github.
+                </p>
+              </div>
+              <div class="px-4 text-gray-400">
+                <p class="">
+                  In my free time, I like to read bolgs 📖, play games on
+                  PlayStation 🎮 and play football outdoor ⚽️. I love listening
+                  to music 🎵.
+                </p>
+              </div>
+              <div class="px-4 text-gray-400">
+                <p class="">
+                  I like to interact with people, and listen to new ideas 💡. I am
+                  always open to discussing anything and look forward to connecting
+                  with you 🤝. Feel free to contact me here.
+                </p>
+              </div>
+              <div class="px-4">
+                <button
+                  class="uppercase px-10 py-4 bg-black text-white rounded font-bold"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="lg:w-[40%] lg:ps-24 lg:pe-36">
+            <div class="space-y-7">
+              <div class="flex justify-center lg:justify-start lg:px-4">
+                <p class="text-2xl font-bold">My Skills</p>
+              </div>
+              <div class="">
+                <div class="space-x-2 space-y-4">
+                  <button
+                    class="px-5 py-4 border-2 rounded-3xl bg-gray-100"
+                    *ngFor="let skill of skillsArray; let i = index"
+                    [class.ms-2]="i === 0"
+                  >
+                    {{ skill }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
