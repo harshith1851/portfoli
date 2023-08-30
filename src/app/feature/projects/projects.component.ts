@@ -50,39 +50,38 @@ export class ProjectsComponent implements OnInit,AfterViewInit  {
 
 
   ngAfterViewInit(): void {
-  //   gsap.utils.toArray('.project-item').forEach((item:any, index) => {
-  //     gsap.from(item, {
-  //       opacity: 0,
-  //       y: 50,
-  //       duration: 1,
-  //       scrollTrigger: {
-  //         trigger: item,
-  //         start: 'top 95%',
-  //         scrub: true, // Enable scrubbing effect
-  //       },
-  //     });
+    // gsap.utils.toArray('.project-item').forEach((item:any, index) => {
+    //   gsap.from(item, {
+    //     opacity: 0,
+    //     y: 50,
+    //     duration: 1,
+    //     scrollTrigger: {
+    //       trigger: item,
+    //       start: 'top 95%',
+    //       scrub: true, // Enable scrubbing effect
+    //     },
+    //   });
      
-  //   });
-  //   // gsap.from('img', {
+    // });
+    // gsap.from('img', {
         
-  //   //   x: -500,
-  //   //   duration: 1,
-  //   //   scrollTrigger: {
-  //   //     trigger: '.img',
-  //   //     start: 'top 95%',
-  //   //     scrub: true, // Enable scrubbing effect
-  //   //   },
-  //   // });
-  //   // gsap.from('.mydata', {
+    //   x: -500,
+    //   duration: 1,
+    //   scrollTrigger: {
+    //     trigger: '.img',
+    //     start: 'top 95%',
+    //     scrub: true, // Enable scrubbing effect
+    //   },
+    // });
+    // gsap.from('.mydata', {
     
-  //   //   x: 500,
-  //   //   duration: 1,
-  //   //   scrollTrigger: {
-  //   //     trigger: '.mydata',
-  //   //     start: 'top 99%',
-  //   //     scrub: true, // Enable scrubbing effect
-  //   //   },
-  //   // });
-  // }
+    //   x: 500,
+    //   duration: 1,
+    //   scrollTrigger: {
+    //     trigger: '.mydata',
+    //     start: 'top 99%',
+    //     scrub: true, // Enable scrubbing effect
+    //   },
+    // });
   }
 }
