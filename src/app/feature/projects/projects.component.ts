@@ -57,7 +57,7 @@ export class ProjectsComponent implements OnInit,AfterViewInit  {
         duration: 1,
         scrollTrigger: {
           trigger: item,
-          start: 'top 95%',
+          start: 'top 99%',
           scrub: true, // Enable scrubbing effect
         },
       });
@@ -69,7 +69,7 @@ export class ProjectsComponent implements OnInit,AfterViewInit  {
       duration: 1,
       scrollTrigger: {
         trigger: '.img',
-        start: 'top 95%',
+        start: 'top 99%',
         scrub: true, // Enable scrubbing effect
       },
     });
