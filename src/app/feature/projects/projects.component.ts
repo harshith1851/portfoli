@@ -64,7 +64,7 @@ export class ProjectsComponent implements OnInit,AfterViewInit  {
      
     });
     gsap.from('img', {
-        
+       opacity:0, 
       x: -500,
       duration: 1,
       scrollTrigger: {
@@ -74,7 +74,7 @@ export class ProjectsComponent implements OnInit,AfterViewInit  {
       },
     });
     gsap.from('.mydata', {
-    
+      opacity:0,
       x: 500,
       duration: 1,
       scrollTrigger: {
