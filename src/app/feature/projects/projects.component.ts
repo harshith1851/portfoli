@@ -1,12 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { gsap, TimelineMax } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-export class ProjectsComponent implements OnInit {
-  constructor(private route: ActivatedRoute, private router: Router) {}
+export class ProjectsComponent implements OnInit,AfterViewInit  {
+  constructor(private route: ActivatedRoute, private router: Router) {
+    gsap.registerPlugin(ScrollTrigger);
+  }
   ngOnInit(): void {
     this.portfolioData = [
       {
@@ -41,4 +45,43 @@ export class ProjectsComponent implements OnInit {
     });
   }
   portfolioData: any = [];
+
+
+
+
+  ngAfterViewInit(): void {
+    gsap.utils.toArray('.project-item').forEach((item:any, index) => {
+      gsap.from(item, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: item,
+          start: 'top 95%',
+          scrub: true, // Enable scrubbing effect
+        },
+      });
+     
+    });
+    gsap.from('img', {
+        
+      x: -500,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.img',
+        start: 'top 95%',
+        scrub: true, // Enable scrubbing effect
+      },
+    });
+    gsap.from('.mydata', {
+    
+      x: 500,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.mydata',
+        start: 'top 99%',
+        scrub: true, // Enable scrubbing effect
+      },
+    });
+  }
 }
