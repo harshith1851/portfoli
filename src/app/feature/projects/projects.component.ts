@@ -57,19 +57,19 @@ export class ProjectsComponent implements OnInit,AfterViewInit  {
         duration: 1,
         scrollTrigger: {
           trigger: item,
-          start: 'top 99%',
+          start: 'top 95%',
           scrub: true, // Enable scrubbing effect
         },
       });
      
     });
-    gsap.from('img', {
+    gsap.from('.img', {
        opacity:0, 
       x: -500,
       duration: 1,
       scrollTrigger: {
         trigger: '.img',
-        start: 'top 99%',
+        start: 'top 95%',
         scrub: true, // Enable scrubbing effect
       },
     });
@@ -79,7 +79,7 @@ export class ProjectsComponent implements OnInit,AfterViewInit  {
       duration: 1,
       scrollTrigger: {
         trigger: '.mydata',
-        start: 'top 99%',
+        start: 'top 95%',
         scrub: true, // Enable scrubbing effect
       },
     });
